@@ -1,0 +1,51 @@
+// 1. 
+const validateUsername = (username) => {
+  if (typeof username !== "string") {
+    return "Нужна строка";
+  }
+  if (username.length < 5 || username.length > 15) {
+    return "Нужно, чтобы длина была от 5 до 15 символов";
+  }
+  return null;
+};
+
+// 2. 
+const validateEmail = (email) => {
+  if (typeof email !== "string") {
+    return "Нужна строка";
+  }
+  if (!email.includes("@") || !email.includes(".", email.indexOf("@"))) {
+    return "Нужно, чтобы содержалось '@' и '.' после";
+  }
+  return null;
+};
+
+// 3. 
+const validateAge = (age) => {
+  if (typeof age !== "number" || !Number.isInteger(age)) {
+    return "Требуется целое число";
+  }
+  if (age < 18 || age > 120) {
+    return "Возраст должен быть в диапазоне от 18 до 120";
+  }
+  return null;
+};
+
+// 4.
+const validateAgreement = (isAgreed) => {
+  if (typeof isAgreed !== "boolean" || isAgreed !== true) {
+    return "Необходима истинность (true)";
+  }
+  return null;
+};
+
+// 5. 
+const validatePhone = (phone) => {
+  if (typeof phone !== "string") {
+    return "Нужна строка";
+  }
+  if (!phone.startsWith("+7") || phone.length !== 12) {
+    return "Телефон должен начинаться с +7 и содержать 12 символов";
+  }
+  return null;
+};
