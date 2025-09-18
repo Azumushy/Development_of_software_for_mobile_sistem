@@ -1,0 +1,12 @@
+//utils.js
+
+//вычисление общей суммы 
+export function calculateTotal(...prices) {
+  return prices.reduce((sum, p) => sum + p, 0);
+}
+
+//форматирование информации о пользователе
+export function formatUserInfo(user) {
+  const { name, email, isActive } = user;
+  return `Пользователь: ${name} (${email}). Status: ${isActive ? "Active" : "Inactive"}`;
+}
