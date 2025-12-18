@@ -1,0 +1,13 @@
+{
+  "name": "project_3",
+  "version": "1.0.0",
+  "description": "Система управления пользователями и заказами с асинхронным JavaScript",
+  "type": "module",
+  "scripts": {
+    "start": "node main.js",
+    "dev": "node --watch main.js"
+  },
+  "keywords": ["async", "javascript", "fetch", "promises"],
+  "author": "Your Name",
+  "license": "MIT"
+}
